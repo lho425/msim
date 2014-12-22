@@ -72,13 +72,18 @@ msim_moveMouseToFront()は、移動時に壁に激突してしまった、もし
 という感じで、論理和でオプションを指定します。
 現在以下のオプションが指定できます:
 
-- flag_print_on_move  
+- flag_print_on_move
+
 msim_moveMouseToFront関数が呼ばれたら msim_printMap関数を呼ぶ
 
-- flag_print_on_turn  
+
+- flag_print_on_turn
+
 msim_turnMouseTo関数が呼ばれたら msim_printMap関数を呼ぶ
 
-- flag_no_option  
+
+- flag_no_option
+
 なんのオプションも指定しない。msim_setOptions(flag_no_option)とすればオプションはリセットされます。
 
 

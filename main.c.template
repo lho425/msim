@@ -3,22 +3,23 @@
 
 void setMyWallData();//this func genarated by map2Ccode.sh
 
-void doMyAlgolizm();//impliment this func by your self
 
 int main(){
 
   setMyWallData();//this func genarated by map2Ccode.sh
   
+  /**** オプションをあなたの好みで指定してください ****/
   msim_setOptions(flag_draw_on_move);
+  /**/
 
   msim_printMap();
 
-  doMyAlgolizm();//impliment this func by your self
+  /**** ここで ADATI_HOU_DE_GOAL_NI_IKU() 等の関数を呼んでください ****/
+
+  
+
+  /**************************************************************/
   
   return 0;
 }
 
-void doMyAlgolizm(){
-
-  IMPLIMENT_BY_YOUR_SELF;
-}

@@ -31,6 +31,7 @@ gcc -O2 main.c msim.c mywalldata.c  -o msim
  - 自分の前に壁があるか調べる
  - 右を向く
  - 前に1マス進む
+
 という操作ができる関数を用意しています。具体的には、上で書いた操作は
 
     int msim_existsWallAt(enum msim_Direction d);

@@ -80,17 +80,17 @@ msimプロジェクトに属するすべてのファイルはパブリックド�
 #change log
 
 2014/12/22
-gitレポジトリ作り直して一般公開
-ライセンスについてreadmeで明言 
+- gitレポジトリ作り直して一般公開
+- ライセンスについてreadmeで明言 
 
 2014/12/18 
-チュートリアル追加 
-使い方が変更された 
-オプションが変更された(互換性のない変更) 
+- チュートリアル追加 
+- 使い方が変更された 
+- オプションが変更された(互換性のない変更) 
 
 2014/11/7 
-マウス視点の壁判定・移動関数を追加
- - msim_existsWallAt関数
- - msim_turnMouseTo関数
- - msim_moveMouseToFront関数
-msim_moveMouseTo関数を廃止 
+ - マウス視点の壁判定・移動関数を追加
+  - msim_existsWallAt関数
+  - msim_turnMouseTo関数
+  - msim_moveMouseToFront関数
+ - msim_moveMouseTo関数を廃止 

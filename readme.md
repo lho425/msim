@@ -23,11 +23,9 @@ map.txtを編集
 
 コンソールで以下のコマンドを実行
 
-./map2Ccode.sh map.txt mywalldata.c
-
-gcc -O2 main.c msim.c mywalldata.c  -o msim
-
-./msim.exe
+    ./map2Ccode.sh map.txt mywalldata.c
+    gcc -O2 main.c msim.c mywalldata.c  -o msim
+    ./msim.exe
 
 
 #チュートリアル

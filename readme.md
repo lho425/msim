@@ -47,9 +47,9 @@ gcc -O2 main.c msim.c mywalldata.c  -o msim
 
 例えば、自分の右に壁があるか調べて、壁がなけれは右に進む、ということをするには
 
-    if (msim_existsWallAt(right)){
-        msim_turnMouseTo(right)
-        msim_moveMouseToFront()
+    if (!msim_existsWallAt(right)){
+        msim_turnMouseTo(right);
+        msim_moveMouseToFront();
     }
 という風にすればよいです。__しかし__、あなたは、あなたが書いた壁判定関数や移動関数を、上で挙げた3つの関数を呼び出すように移植するべきです。そうすれば、あなたの迷路探索アルゴリズムを一切書き換えることなくシミュレータ上で動かせるでしょう！
 msim_moveMouseToFront()は、移動時に壁に激突してしまった、もしくは既に壁に激突していた場合0を返しその場に留まり、壁に激突せずに移動できた場合1を返します。
@@ -64,9 +64,12 @@ msim_moveMouseToFront()は、移動時に壁に激突してしまった、もし
 ##実際にシミュレータを動かす編
 迷路の壁情報を設定し、オプションを指定し、あなたの実行したい関数、例えば足立法でゴールまで行く、ような関数を実行します。基本的にはmsim.c(msim.c.templateをコピーして、msim.cにリネームしてください)に書いてあるのを書き換えればいいです。
 
-##オプションの設定の仕方
+##オプションを設定する
+
+オプションを設定すると、msimの挙動を幾らか変えることが出来ます。オプションは
+
     void msim_setOptions(int flags)
-を使ってオプションを指定します。二回以上呼んだ場合、オプションは追加ではなくその都度リセットして設定されます。
+関数を使って指定します。二回以上呼んだ場合、オプションは追加ではなくその都度リセットして設定されます。
 
     msim_setOptions(flag_draw_on_move | flag_draw_on_turn);
 という感じで、論理和でオプションを指定します。

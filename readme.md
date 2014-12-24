@@ -12,13 +12,16 @@ gccを入れる
 
 あなたのコードをシミュレータで動くように移植する
 
-main.c.template を コピーしてmain.cという名前に変える
+コンソールで以下のコマンドを実行
+
+    cp main.c.template main.c
+もしくはエクスプローラ等でmain.c.template を コピーしてmain.cという名前に変える
 
 main.cを適宜書き換える 
 
 map.txtを編集
 
-cygwinのコンソールで以下のコマンドを実行
+コンソールで以下のコマンドを実行
 
 ./map2Ccode.sh map.txt mywalldata.c
 
